@@ -1,0 +1,120 @@
+  {
+    "widgets": [
+        {
+            "height": 6,
+            "width": 9,
+            "y": 0,
+            "x": 0,
+            "type": "metric",
+            "properties": {
+                "view": "bar",
+                "stacked": false,
+                "metrics": [
+                    [ "AWS/Kafka", "CpuUser", "Cluster Name", "dev-observations-msk", "Broker ID", "1" ],
+                    [ "AWS/Kafka", "CpuUser", "Cluster Name", "dev-observations-msk", "Broker ID", "2" ],
+                    [ "AWS/Kafka", "CpuUser", "Cluster Name", "dev-observations-msk", "Broker ID", "3" ]
+                ],
+                "region": "us-east-2",
+                "title": "CPU usage",
+                "setPeriodToTimeRange": true
+            }
+        },
+        {
+            "height": 6,
+            "width": 9,
+            "y": 6,
+            "x": 0,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ "AWS/Kafka", "MemoryUsed", "Cluster Name", "dev-observations-msk", "Broker ID", "1" ],
+                    [ "AWS/Kafka", "MemoryUsed", "Cluster Name", "dev-observations-msk", "Broker ID", "2" ],
+                    [ "AWS/Kafka", "MemoryUsed", "Cluster Name", "dev-observations-msk", "Broker ID", "3" ],
+                    [ "AWS/Kafka", "MemoryFree", "Cluster Name", "dev-observations-msk", "Broker ID", "1" ],
+                    [ "AWS/Kafka", "MemoryFree", "Cluster Name", "dev-observations-msk", "Broker ID", "2" ],
+                    [ "AWS/Kafka", "MemoryFree", "Cluster Name", "dev-observations-msk", "Broker ID", "3" ],
+                    [ "AWS/Kafka", "MemoryCached", "Cluster Name", "dev-observations-msk", "Broker ID", "1", { "visible": false } ],
+                    [ "AWS/Kafka", "MemoryCached", "Cluster Name", "dev-observations-msk", "Broker ID", "2", { "visible": false } ],
+                    [ "AWS/Kafka", "MemoryCached", "Cluster Name", "dev-observations-msk", "Broker ID", "3", { "visible": false } ],
+                    [ "AWS/Kafka", "MemoryBuffered", "Cluster Name", "dev-observations-msk", "Broker ID", "1", { "visible": false } ],
+                    [ "AWS/Kafka", "MemoryBuffered", "Cluster Name", "dev-observations-msk", "Broker ID", "2", { "visible": false } ],
+                    [ "AWS/Kafka", "MemoryBuffered", "Cluster Name", "dev-observations-msk", "Broker ID", "3", { "visible": false } ]
+                ],
+                "view": "bar",
+                "stacked": false,
+                "region": "us-east-2",
+                "title": "Memory usage metrics",
+                "period": 300,
+                "stat": "Average",
+                "setPeriodToTimeRange": true
+            }
+        },
+        {
+            "height": 6,
+            "width": 9,
+            "y": 6,
+            "x": 12,
+            "type": "metric",
+            "properties": {
+                "view": "bar",
+                "stacked": false,
+                "metrics": [
+                    [ "AWS/Kafka", "KafkaDataLogsDiskUsed", "Cluster Name", "dev-observations-msk", "Broker ID", "1" ],
+                    [ "AWS/Kafka", "KafkaDataLogsDiskUsed", "Cluster Name", "dev-observations-msk", "Broker ID", "2" ],
+                    [ "AWS/Kafka", "KafkaDataLogsDiskUsed", "Cluster Name", "dev-observations-msk", "Broker ID", "3" ]
+                ],
+                "region": "us-east-2",
+                "title": "Kafka Disk usage metrics",
+                "setPeriodToTimeRange": true,
+                "period": 300
+            }
+        },
+        {
+            "height": 6,
+            "width": 9,
+            "y": 12,
+            "x": 6,
+            "type": "metric",
+            "properties": {
+                "view": "bar",
+                "stacked": false,
+                "metrics": [
+                    [ "AWS/Kafka", "NetworkRxPackets", "Cluster Name", "dev-observations-msk", "Broker ID", "1" ],
+                    [ "AWS/Kafka", "NetworkRxPackets", "Cluster Name", "dev-observations-msk", "Broker ID", "2" ],
+                    [ "AWS/Kafka", "NetworkRxPackets", "Cluster Name", "dev-observations-msk", "Broker ID", "3" ],
+                    [ "AWS/Kafka", "NetworkTxPackets", "Cluster Name", "dev-observations-msk", "Broker ID", "1" ],
+                    [ "AWS/Kafka", "NetworkTxPackets", "Cluster Name", "dev-observations-msk", "Broker ID", "2" ],
+                    [ "AWS/Kafka", "NetworkTxPackets", "Cluster Name", "dev-observations-msk", "Broker ID", "3" ]
+                ],
+                "region": "us-east-2",
+                "title": "Kafka Network IOPS metrics",
+                "setPeriodToTimeRange": true
+            }
+        },
+        {
+            "height": 6,
+            "width": 9,
+            "y": 0,
+            "x": 12,
+            "type": "metric",
+            "properties": {
+                "view": "bar",
+                "stacked": false,
+                "metrics": [
+                    [ "AWS/Kafka", "BytesOutPerSec", "Cluster Name", "dev-observations-msk", "Broker ID", "1", "Topic", "dev.observations.raw" ],
+                    [ "AWS/Kafka", "BytesOutPerSec", "Cluster Name", "dev-observations-msk", "Broker ID", "2", "Topic", "dev.observations.raw" ],
+                    [ "AWS/Kafka", "BytesOutPerSec", "Cluster Name", "dev-observations-msk", "Broker ID", "3", "Topic", "dev.observations.raw" ],
+                    [ "AWS/Kafka", "BytesInPerSec", "Cluster Name", "dev-observations-msk", "Broker ID", "1", "Topic", "dev.observations.raw" ],
+                    [ "AWS/Kafka", "BytesInPerSec", "Cluster Name", "dev-observations-msk", "Broker ID", "2", "Topic", "dev.observations.raw" ],
+                    [ "AWS/Kafka", "BytesInPerSec", "Cluster Name", "dev-observations-msk", "Broker ID", "3", "Topic", "dev.observations.raw" ],
+                    [ "AWS/Kafka", "MessagesInPerSec", "Cluster Name", "dev-observations-msk", "Broker ID", "1" ],
+                    [ "AWS/Kafka", "MessagesInPerSec", "Cluster Name", "dev-observations-msk", "Broker ID", "2" ],
+                    [ "AWS/Kafka", "MessagesInPerSec", "Cluster Name", "dev-observations-msk", "Broker ID", "3" ]
+                ],
+                "region": "us-east-2",
+                "title": "Kafka IOPS metrics",
+                "setPeriodToTimeRange": true
+            }
+        }
+    ]
+}
